@@ -6,75 +6,51 @@
 \usepackage[dvips]{epsfig}
 \usepackage{doc}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%123456789012345678901234567890123456789012345678901234567890123456789
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\textheight    29cm
-%\textwidth     15cm
-%\topmargin     -4cm
-%\oddsidemargin  5mm
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[t]
-\begin{center}
-\includegraphics [scale=0.075]{imagen1.eps}
-\end{center}
-\end{figure}
 
 \begin{document}
 \title{Imforme de número $\pi$}
-\author{Ana Gómez Pérez\\ Práctica de Laboratorio \#10}
+\author{Ana Gómez Pérez\\ Práctica de Laboratorio 10}
 \date{11 de abril de 2014}
 
 \maketitle
 
 \begin{abstract}
-El objetivo de este documento es saber más sobre el número $\pi$ y exponerlo en un pdf con \LaTeX{}~\cite{LaTeX}. 
+El objetivo de este documento es saber más sobre el número $\pi$ y exponerlo en un pdf con \LaTeX{}~\cite{LaTeXpg} en la universidad (figura)~\ref{et:graf} .
 \end{abstract}
 
-%\thispagestyle{empty}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-\section{Motivación y Objetivos}
- \subsection{rfhy}
- 
-A lo largo de la historia han sido muchas las formas utilizadas por el 
-ser humano para calcular aproximaciones cada vez más exactas del número $\pi${}~\cite{PI}.
-%
-El objetivo de esta práctica de laboratorio es implementar el código \textsf{Python}
-que permita a\-pro\-xi\-mar el número $\pi$ con una cierta precisión. 
-%
-$\pi$ se puede calcular mediante integración:
+\section{historia del número $\pi$}
+$\pi${}~\cite{PIpg} es un número irracional, cociente entre la longitud de la circunferencia y la longitud
+de su diámetro. Se emplea frecuentemente en matemáticas, física e ingeriería. El valor numérico
+de $\pi$ truncado a sus diez primeras posiciones decimales, es el siguiente: 3,1415926535...
 
-$$\int_{0}^{1} \! \frac{4}{1+x^2}\, dx = 4(atan(1) -atan(0)) = \pi $$
-
-Esta integral se puede aproximar numéricamente con una fórmula de cuadratura.
-%
-Si se utiliza la regla del punto medio se obtiene:
-
+ \begin{figure}[t]
 \begin{center}
-$ \pi \approx \frac{1}{n} \sum\limits_{i=1}^{n}f(x_i)\,$, 
-con $f(x) = \frac{4}{(1+x^2)}\,$,
-$x_i = \frac{i - \frac{1}{2}}{n}$,
-para $i = 1, \dots, n$
+\includegraphics [scale=0.075]{imagen1.eps}
+\label{et:graf}
 \end{center}
+\end{figure}
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-\section{Ejercicios propuestos}
+\section{Historia del valor $\pi$}
+La búsqueda del mayor número de decimales de número $\pi$ ha supuesto un esfuerzo constante de numerosos científicos a lo largo de la historia.
+Algunas aproximaciones históricas de $\pi$ son las siguientes:
+ \subsection{Antiguo Egipcio}
+ \subsection{Antigua Babilónia}
 
-Escriba un programa que reciba como entrada el número de subintervalos 
-con los que se desea abordar la aproximación de $\pi$.
-%
-A partir de él se deben calcular y mostrar por la consola:
 
 
-Algunas aproximaciones históricasde valores de $\pi$, anteriores a la época computacional, se muestran en la siguente tabla:\\ 
+Algunas aproximaciones históricas (tabla)~\ref{eq:Tabla} de valores de $\pi$, anteriores a la época computacional\footnote{a partir del siglo 80}, se muestran en la siguente tabla:\\ 
 \begin{table}{}
+\caption{Tabla del número}
 \begin{center}
 \begin{tabular}{|l|r|c|}
 Cultura    &  Aproximacion & Error\\ \hline
-Egipcia    &  3,1605       & 6016 ppm\\ \hline
+Egipcia    &  3,1605       & 6016 ppm \\ \hline
 Babilónica &  3,125        & 5282 ppm\\ \hline
 India      &  3,09         & 16422 ppm\\ \hline
+\label{eq:Tabla}
 \end{tabular}
 \end{center}
 \end {table}
@@ -82,24 +58,13 @@ India      &  3,09         & 16422 ppm\\ \hline
   \item
 \end{enumerate}
 
-Por ejemplo, si se utilizan 4 subintervalos, la salida debería ser: 
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliographystyle{plain}
 
 
-
-%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-\section{Entregable}
-En la tarea habilitada para esta práctica en el Aula Virtual, se subirá 
-la dirección del repositorio \textit{github} donde se ha almacenado la práctica. 
-
-%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-\section{Para saber más...}
-
-Amplíe el programa \textsf{Python} que ha desarrollado para que el número de
-subintervalos se pueda obtener también desde la línea de comandos.
-
-\begin{thebibliography}{1}
-\bibitem{LaTeX} Manual de \LaTeX{}. http://www.fceia.unr.edu.ar/lcc/cdrom/Instalaciones/LaTex/latex.html
-\bibitem{PI} Informacion de $\pi$. http://es.wikipedia.org/wiki/N%C3%BAmero_%CF%80
-\end{thebibliography}
+\bibliography{ej_article}
+\nocite{*}
 
 \end{document}

@@ -1,0 +1,9 @@
+@misc{LaTeXpg,
+author = "Nikos Dracos",
+title = "Manual de LaTeX",
+howpublished = "\url http://www.fceia.unr.edu.ar/lcc/cdrom/Instalaciones/LaTex/latex.html}"
+}
+@misc{PIpg,
+title = "Informacion del numero pi",
+howpublished = "\url http://es.wikipedia.org/wiki/NC3BAmeroCF80}"
+}
