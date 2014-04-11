@@ -16,7 +16,7 @@
 \maketitle
 
 \begin{abstract}
-El objetivo de este documento es saber más sobre el número $\pi$ y exponerlo en un pdf con \LaTeX{}~\cite{LaTeXpg} en la universidad~\ref{et:graf} .
+El objetivo de este documento es saber más sobre el número $\pi$ y exponerlo en un pdf con \LaTeX{}~\cite{LaTeXpg} en la universidad (figura)~\ref{et:graf} .
 \end{abstract}
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -41,7 +41,7 @@ Algunas aproximaciones históricas de $\pi$ son las siguientes:
 
 
 
-Algunas aproximaciones históricas~\ref{eq:Tabla} de valores de $\pi$, anteriores a la época computacional\footnote{a partir del siglo 80}, se muestran en la siguente tabla:\\ 
+Algunas aproximaciones históricas (tabla)~\ref{eq:Tabla} de valores de $\pi$, anteriores a la época computacional\footnote{a partir del siglo 80}, se muestran en la siguente tabla:\\ 
 \begin{table}{}
 \caption{Tabla del número}
 \begin{center}
